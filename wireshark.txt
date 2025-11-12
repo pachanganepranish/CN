@@ -1,0 +1,25 @@
+prac 7:
+dns.qry.name contains "facebook.com"
+tcp and (ip.addr == <FB_IP1> or ip.addr == <FB_IP2>)
+http
+tls->https
+
+tcp.flags.syn==1
+tcp.flags.push==1
+tcp.flags.rst==1
+
+tcp and ip.src == <MY_IP> and (ip.dst == <FB_IP1> or ip.dst == <FB_IP2> ...)
+
+http and ip.src == <MY_IP> and (ip.dst == <FB_IP1> or ip.dst == ...)
+
+
+prac 9:
+tls
+tcp.port==443
+client hello
+
+prac 10:
+ah
+esp
+
+
