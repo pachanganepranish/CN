@@ -1,0 +1,6 @@
+name:name
+server name=219.100.37.82
+vpn type:L2TP/IPsec with pre shared key
+pre-shared key:vpn
+username:vpn
+password:vpn
